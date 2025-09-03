@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DON GOMB és más</title>
+<style>
+html, body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255,253,224);
+  background: linear-gradient(180deg, rgba(255,253,224,1) 0%, rgba(255,255,255,1) 50%, rgba(213,207,186,1) 100%); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+}
+.raleway-centered {
+  text-align: center;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.midbuttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  margin: 4px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #000000;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 15px 0px;
+}
+
+.button1 {
+  font-size: 16px;
+  background-color: rgb(109, 0, 0); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #ff0000;
+}
+
+.button2 {
+  font-size: 16px;
+  transition-duration: 0.1s;
+  background-color: rgb(1, 83, 0); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #00ff00;
+}
+
+.button3 {
+  font-size: 16px;
+  transition-duration: 0.1s;
+  background-color: rgb(0, 60, 75); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #00d9ff;
+}
+
+.button4 {
+  font-size: 16px;
+  transition-duration: 0.1s;
+  background-color: rgb(30, 0, 87); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #5900ff;
+}
+
+.button5 {
+  font-size: 16px;
+  transition-duration: 0.1s;
+  background-color: rgb(77, 50, 0); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #ff7300;
+}
+
+.button6 {
+  font-size: 16px;
+  transition-duration: 0.1s;
+  background-color: rgb(46, 0, 8); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #ff0055;
+}
+
+.button:hover {
+  background-color: #545454;
+  color: white;
+}
+
+.button:active {
+  background-color: #000000;
+  transform: scale(0.9);
+}
+.imidzs {
+  width: 300px;
+  height: 300px;
+}
+
+.lablec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  margin-top: auto;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+<div class="raleway-centered">
+<h1>A GOMB</h1>
+<p>Das ist ein Knopf, nie?</p>
+</div>
+
+
+<div class="mid">
+<button onclick = "fn()" id=buton class="button"><strong> GOMB </strong></button>
+</div>
+
+<div class="midbuttons">
+  <div><button onclick="AC()" class="button button1" id="1">0 Autoclicker: 10</button></div>
+  <div><button onclick="GT()" class="button button2" id="2">0 Chat GPT gombgeneráló: 100</button></div>
+  <div><button onclick="EB()" class="button button3" id="3">0 Egyiptomi birtok: 1000</button></div>
+  <div><button onclick="BA()" class="button button4" id="4">0 Balikó: 10000</button></div>
+  <div><button onclick="KO()" class="button button5" id="5">0 Kokkancs: 50000</button></div>
+</div>
+
+<div class="midbuttons"><button class="button button6" onclick="ASC()" id="6">0 ÚJJÁSZÜLETÉS: 690 mindenből</button></div>
+
+<div class="mid raleway-centered"><p id="420">Neked van <b>0</b>gps.</p></div>
+
+
+<div class="mid raleway-centered"><p id="69">Neked van  <b>0</b>  sigmagombod.</p></div>
+
+<div class="mid raleway-centered">
+<p>A <b>gomb</b>, amit meg lehet <i>nyomni</i>. Kérem <i>nyomja</i> meg a <b>gombot</b>. Ha <i>megnyomja</i> a <b>gombot</b>, a <b>gomb</b> <i>megnyomódik</i>. 
+De kérem ne <i>nyomja</i> meg a <b>gombot</b> túl sokszor! 
+<i>Megnyomódni</i>, vagy nem <i>megnyomódni</i>? Ez itt a kérdés. De nem csak kérdés van, hanem <b>gomb</b> is.
+Az ám. Bezony. Már pedig ez így van. Ez így van. Ihaj.</p>
+</div>
+
+<div class="mid"><img class="imidzs" src="fakegomb.jpg"></div>
+
+<div class="lablec raleway-centered"><a href="mappe.html">About</a></div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var mainbutton = document.getElementById("buton");
+var count = 0;
+var gps = 0;
+
+var ACbutton = document.getElementById("1");
+var GTbutton = document.getElementById("2");
+var EBbutton = document.getElementById("3");
+var BAbutton = document.getElementById("4");
+var KObutton = document.getElementById("5");
+var ASCbutton = document.getElementById("6");
+var SigmaButtonElement = document.getElementById("69");
+var gpsButtonElement = document.getElementById("420");
+
+var ACcount = 0;
+var GTcount = 0;
+var EBcount = 0;
+var BAcount = 0;
+var KOcount = 0;
+var ASCcount = 0;
+
+var canAC = false;
+var canGT = false;
+var canEB = false;
+var canBA = false;
+var canKO = false;
+
+var clickerOn = false;
+
+var prestige = 0;
+
+hide(ACbutton);
+hide(GTbutton);
+hide(EBbutton);
+hide(BAbutton);
+hide(KObutton);
+hide(ASCbutton);
+function hide(element) {
+  element.style.display = "none";
+  }
+function show(element) {
+    element.style.display = "block";
+  }
+
+var t=setInterval(perSec,1);
+
+function perSec(){
+  if (clickerOn){
+    const ascMultiplier = 1 + (ASCcount * 0.1);
+  count += ACcount * 0.01 * ascMultiplier;
+  count += GTcount * 0.05 * ascMultiplier;
+  count += EBcount * 0.20 * ascMultiplier;
+  count += BAcount * 1.00 * ascMultiplier;
+  count += KOcount * 5.00 * ascMultiplier;
+  mainbutton.innerHTML = Math.round(count);
+  
+  //fasz
+  gps += ACcount * 0.01 * ascMultiplier;
+  gps += GTcount * 0.05 * ascMultiplier;
+  gps += EBcount * 0.20 * ascMultiplier;
+  gps += BAcount * 1.00 * ascMultiplier;
+  gps += KOcount * 5.00 * ascMultiplier;
+  gpsButtonElement.innerHTML ="Neked van " + Math.round((gps*100)*100)/100 + " gps.";
+  gps=0;
+
+
+  }
+  if (count > 10){
+    canAC = true;
+    ACbutton.style.border = "2px solid #ff0000";
+  } else {
+    ACbutton.style.border = "2px solid #000000";
+  }
+  if (count > 100){
+    canGT = true;
+    GTbutton.style.border = "2px solid #00ff00";
+  } else {
+    GTbutton.style.border = "2px solid #000000";
+  }
+  if (count > 1000){
+    canEB = true;
+    EBbutton.style.border = "2px solid #00d9ff";
+  } else {
+    EBbutton.style.border = "2px solid #000000";
+  }
+  if (count > 10000){
+    canBA = true;
+    BAbutton.style.border = "2px solid #5900ff";
+  } else {
+    BAbutton.style.border = "2px solid #000000";
+  }
+  if (count > 50000){
+    canKO = true;
+    KObutton.style.border = "2px solid #ff7300";
+  } else {
+    KObutton.style.border = "2px solid #000000";
+  }
+  if (ACcount >= 690 && GTcount >= 690 && EBcount >= 690 && BAcount >= 690 && KOcount >= 690) {
+    ASCbutton.style.border = "2px solid #ff0055";
+  } else {
+    ASCbutton.style.border = "2px solid #000000";
+  }
+}
+
+function fn(){
+	count += 1 + (ASCcount * 2);
+
+	if(count > 20){
+  clickerOn = true;
+	}
+  if (clickerOn){
+  mainbutton.innerHTML = Math.round(count);
+  show(ACbutton);
+  show(GTbutton);
+  show(EBbutton);
+  show(BAbutton);
+  show(KObutton);
+  show(ASCbutton);
+  
+  }
+}
+
+function AC(){
+  if(clickerOn){
+    if(count > 10){
+      count -= 10
+      ACcount += 1
+      ACbutton.innerHTML = ACcount + " Autoclicker: 10";
+      mainbutton.innerHTML = Math.round(count);
+    }
+  }
+}
+
+function GT(){
+  if(clickerOn){
+    if(count > 100){
+      count -= 100
+      GTcount += 1
+      GTbutton.innerHTML = GTcount + " Chat GPT gombgeneráló: 100";
+      mainbutton.innerHTML = Math.round(count);
+    }
+  }
+}
+
+function EB(){
+  if(clickerOn){
+    if(count > 1000){
+      count -= 1000
+      EBcount += 1
+      EBbutton.innerHTML = EBcount + " Egyiptomi birtok: 1000";
+      mainbutton.innerHTML = Math.round(count);
+    }
+  }
+}
+
+function BA(){
+  if(clickerOn){
+    if(count > 10000){
+      count -= 10000
+      BAcount += 1
+      BAbutton.innerHTML = BAcount + " Balikó: 10000";
+      mainbutton.innerHTML = Math.round(count);
+    }
+  }
+}
+
+function KO(){
+  if(clickerOn){
+    if(count > 50000){
+      count -= 50000
+      KOcount += 1
+      KObutton.innerHTML = KOcount + " Kokkancs: 50000";
+      mainbutton.innerHTML = Math.round(count);
+    }
+  }
+}
+
+function ASC(){
+  if(clickerOn){
+    if(ACcount >= 690 && GTcount >= 690 && EBcount >= 690 && BAcount >= 690 && KOcount >= 690){
+      ACcount -= 690
+      GTcount -= 690
+      EBcount -= 690
+      BAcount -= 690
+      KOcount -= 690
+
+      prestige += count + ACcount * 2 + GTcount * 10 + EBcount * 200 + BAcount * 2000 + KOcount * 10000;
+      count = 0;
+      ACcount = 0;
+      GTcount = 0;
+      EBcount = 0;
+      BAcount = 0;
+      KOcount = 0;
+      mainbutton.innerHTML = Math.round(count);
+      
+      ASCcount += 1
+
+      ACbutton.innerHTML = ACcount + " Autoclicker: 10";
+      GTbutton.innerHTML = GTcount + " Chat GPT gombgeneráló: 100";
+      EBbutton.innerHTML = EBcount + " Egyiptomi birtok: 1000";
+      BAbutton.innerHTML = BAcount + " Balikó: 10000";
+      KObutton.innerHTML = KOcount + " Kokkancs: 50000";
+      ASCbutton.innerHTML = ASCcount + " ÚJJÁSZÜLETÉS: 690 mindenből";
+      SigmaButtonElement.innerHTML = "Neked van <b>" + Math.round(prestige) + "</b> sigmagombod.";
+    }
+  }
+}
+
+
+
+</script>
+
+</html>

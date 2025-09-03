@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Donny D. Trump Simulator 2025</title>
+    <style>
+        html, body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255,253,224);
+  background: linear-gradient(180deg, rgba(255,253,224,1) 0%, rgba(255,255,255,1) 50%, rgba(213,207,186,1) 100%); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.raleway-centered {
+  text-align: center;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  margin: 4px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #000000;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 15px 0px;
+}
+
+.button:hover {
+  background-color: #545454;
+  color: white;
+}
+
+.button:active {
+  background-color: #000000;
+  transform: scale(0.9);
+}
+
+.lablec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  margin-top: auto;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167295.7186422863!2d73.48846550403032!3d-53.073481257531206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb301524b88922bfd%3A0x261ddac2e5b3767e!2sHeard%20Island%20and%20McDonald%20Islands!5e0!3m2!1shu!2shu!4v1744096979229!5m2!1shu!2shu" width="1920" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <div class="raleway-centered"><button class="button" onclick="fn()" id="1"> 0% tarriffs</button></div>
+    <div class="lablec"><button class="button" onclick="window.location.href='index.html'">Back</button></div>
+</body>
+
+
+<script>
+    var tarriffs = 0;
+    function fn() {
+        tarriffs += 10;
+        document.getElementById("1").innerHTML = tarriffs + "% tarriffs";
+    }
+</script>
+</html>
