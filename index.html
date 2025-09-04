@@ -218,6 +218,12 @@ var BAcount = 0;
 var KOcount = 0;
 var ASCcount = 0;
 
+var ACcost = 10;
+var GTcost = 100;
+var EBcost = 1000;
+var BAcost = 10000;
+var KOcost = 50000;
+
 var canAC = false;
 var canGT = false;
 var canEB = false;
@@ -264,31 +270,31 @@ function perSec(){
 
 
   }
-  if (count > 10){
+  if (count > ACcost){
     canAC = true;
     ACbutton.style.border = "2px solid #ff0000";
   } else {
     ACbutton.style.border = "2px solid #000000";
   }
-  if (count > 100){
+  if (count > GTcost){
     canGT = true;
     GTbutton.style.border = "2px solid #00ff00";
   } else {
     GTbutton.style.border = "2px solid #000000";
   }
-  if (count > 1000){
+  if (count > EBcost){
     canEB = true;
     EBbutton.style.border = "2px solid #00d9ff";
   } else {
     EBbutton.style.border = "2px solid #000000";
   }
-  if (count > 10000){
+  if (count > BAcost){
     canBA = true;
     BAbutton.style.border = "2px solid #5900ff";
   } else {
     BAbutton.style.border = "2px solid #000000";
   }
-  if (count > 50000){
+  if (count > KOcost){
     canKO = true;
     KObutton.style.border = "2px solid #ff7300";
   } else {
@@ -324,7 +330,7 @@ function AC(){
     if(count > 10){
       count -= 10
       ACcount += 1
-      ACbutton.innerHTML = ACcount + " Autoclicker: 10";
+      ACbutton.innerHTML = ACcount + " Autoclicker: " + ACcost;
       mainbutton.innerHTML = Math.round(count);
     }
   }
@@ -335,7 +341,7 @@ function GT(){
     if(count > 100){
       count -= 100
       GTcount += 1
-      GTbutton.innerHTML = GTcount + " Chat GPT gombgeneráló: 100";
+      GTbutton.innerHTML = GTcount + " Chat GPT gombgeneráló: " + GTcost;
       mainbutton.innerHTML = Math.round(count);
     }
   }
@@ -346,7 +352,7 @@ function EB(){
     if(count > 1000){
       count -= 1000
       EBcount += 1
-      EBbutton.innerHTML = EBcount + " Egyiptomi birtok: 1000";
+      EBbutton.innerHTML = EBcount + " Egyiptomi birtok: " + EBcost;
       mainbutton.innerHTML = Math.round(count);
     }
   }
@@ -357,7 +363,7 @@ function BA(){
     if(count > 10000){
       count -= 10000
       BAcount += 1
-      BAbutton.innerHTML = BAcount + " Balikó: 10000";
+      BAbutton.innerHTML = BAcount + " Balikó: " + BAcost;
       mainbutton.innerHTML = Math.round(count);
     }
   }
@@ -368,7 +374,7 @@ function KO(){
     if(count > 50000){
       count -= 50000
       KOcount += 1
-      KObutton.innerHTML = KOcount + " Kokkancs: 50000";
+      KObutton.innerHTML = KOcount + " Kokkancs: " + KOcost;
       mainbutton.innerHTML = Math.round(count);
     }
   }
@@ -394,11 +400,11 @@ function ASC(){
       
       ASCcount += 1
 
-      ACbutton.innerHTML = ACcount + " Autoclicker: 10";
-      GTbutton.innerHTML = GTcount + " Chat GPT gombgeneráló: 100";
-      EBbutton.innerHTML = EBcount + " Egyiptomi birtok: 1000";
-      BAbutton.innerHTML = BAcount + " Balikó: 10000";
-      KObutton.innerHTML = KOcount + " Kokkancs: 50000";
+      ACbutton.innerHTML = ACcount + " Autoclicker: " + ACcost;
+      GTbutton.innerHTML = GTcount + " Chat GPT gombgeneráló: " + GTcost;
+      EBbutton.innerHTML = EBcount + " Egyiptomi birtok: " + EBcost;
+      BAbutton.innerHTML = BAcount + " Balikó: " + BAcost;
+      KObutton.innerHTML = KOcount + " Kokkancs: " + KOcost;
       ASCbutton.innerHTML = ASCcount + " ÚJJÁSZÜLETÉS: 690 mindenből";
       SigmaButtonElement.innerHTML = "Neked van <b>" + Math.round(prestige) + "</b> sigmagombod.";
     }
